@@ -9,11 +9,11 @@ export const ConsoleOutputStyle = `
 
     html {
         font-family: sans-serif;
+        white-space: nowrap;
     }
 
     body {
         background-color: #f7f7f7;
-        padding: 2rem 3rem
     }
 
     .container {
@@ -21,8 +21,7 @@ export const ConsoleOutputStyle = `
     }
 
     .console-content {
-        padding: 1rem 2rem;
-        border: 1px solid lightblue;
+        padding: .7rem 1rem;
         color: #898fd4;
     }
 
@@ -35,6 +34,7 @@ export const ConsoleOutputStyle = `
         padding: .3rem .3rem;
         list-style: none;
         border-bottom: 1px solid #adb5bd;
+        min-width: 8rem;
     }
 `;
 

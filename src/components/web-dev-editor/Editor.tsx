@@ -49,12 +49,12 @@ const Editor: React.FC<Props> = (props) => {
 
     return (
         <div className={`editor-container ${open ? "" : "collapsed"}`}>
-            <div className='editor-title'>
+            <div className="editor-title">
                 {displayName}{" "}
                 <button
                     onClick={() => setOpen((prevOpen) => !prevOpen)}
-                    type='button'
-                    className='expand-collapse-btn'
+                    type="button"
+                    className="expand-collapse-btn"
                 >
                     <FontAwesomeIcon icon={open ? faCompressAlt : faExpandAlt} />
                 </button>
@@ -62,7 +62,7 @@ const Editor: React.FC<Props> = (props) => {
             <ControlledEditor
                 onBeforeChange={handleChange}
                 value={value}
-                className='code-mirror-wrapper'
+                className="code-mirror-wrapper"
                 options={{
                     lineWrapping: true,
                     lint: true,
